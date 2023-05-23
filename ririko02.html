@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>会員登録</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        label {
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            width: 300px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0062cc;
+        }
+
+        .my-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    </head>
+<body>
+    <h1>会員登録</h1>
+    <form action="register.php" method="post">
+        <label for="username">ID:</label>
+        <input type="text" id="username" name="username" required> <!-- 필수 입력 필드로 변경 -->
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required> <!-- 필수 입력 필드로 변경 -->
+
+        <label for="email">メール:</label>
+        <input type="email" id="email" name="email" required> <!-- 필수 입력 필드로 변경 -->
+
+        <label for="phone">電話番号:</label>
+        <input type="tel" id="phone" name="phone" required> <!-- 필수 입력 필드로 변경 -->
+
+        <input type="submit" value="加入">
+    </form>
+
+    <a class="my-button" href="ririko01.html">初期ページに戻る</a>
+
+</body>
+</html>

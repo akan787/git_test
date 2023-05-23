@@ -1,0 +1,175 @@
+<body>
+    <style>
+        
+    
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: #3a3a3a;
+}
+html, body {
+  height: 100%
+}
+
+#login-header{
+  color: #f5da7a;
+  font-size: 80px;
+}
+
+#main-holder {
+  width: 50%;
+  height: 70%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 2px black;
+  
+}
+
+#login-error-msg-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#login-error-msg {
+  width: 23%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+
+#error-msg-second-line {
+  display: block;
+}
+
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.login-form-field::placeholder {
+  color: #89e6f3;
+}
+
+.login-form-field {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  padding: 0px 0px 5px 5px;
+}
+
+#login-form-submit {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
+}
+#register-form-submit {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
+  margin-top: 10px;
+}
+
+.mamamu-button {
+		background-color: #4CAF50;
+		border: none;
+		color: white;
+		padding: 5px 10px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		border-radius: 5px;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+		}
+    @media screen and (max-width: 480px) {
+  /* 480px 이하일 때 적용될 스타일 */
+  body {
+    font-size: 14px;
+  }
+  /* 요소들의 간격 조정 */
+  .element {
+    margin-bottom: 10px;
+  }
+  /* 요소 숨기기 */
+  .hidden {
+    display: none;
+  }
+}
+
+
+  </style>
+
+  <main id="main-holder">
+
+    <h1 id="login-header">GOLD WEEK </h1>
+
+    
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">間違ったID <span id="error-msg-second-line">パスワードです。</span></p>
+    </div>
+
+    <form id="login-form" action="#">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="button" onclick="redirectToPage('ririko03.html');" value="Login" id="login-form-submit">
+      <input type="button" onclick="redirectToPage('ririko02.html');" value="join" id="register-form-submit">
+    </form>
+    
+    <script>
+      function redirectToPage(pageURL) {
+        window.location.href = pageURL;
+      }
+    </script>
+    
+    
+    
+    
+    
+  
+    
+  
+
+  </main>
+  
+    
+
+</body>

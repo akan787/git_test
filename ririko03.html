@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GOLDEN WEEK 安否状況</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <style>
+        .contents {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            margin-bottom: 30px;
+            margin-top: 3px;
+            border-bottom: 3px #cfa200 solid;
+            padding: 5px 0;
+        }
+
+        .title>div {
+            width: 300px;
+            height: 30px;
+        }
+
+        .title>div>h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 20px;
+            height: 100%;
+        }
+
+        .title>div>h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            opacity: 0.9;
+            margin-bottom: 0;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .content1 {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #b7b9bd;
+            border-radius: 3px;
+            padding: 7px 5px;
+        }
+
+        .content1>div {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 7px 5px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .content1>div>div:nth-child(1) {
+            width: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .content1>div>div:nth-child(2) {
+            width: calc(100% - 50px);
+        }
+
+        .btnUpdate {
+            display: flex;
+            justify-content: center;
+            align-items: right;
+            background: #cfa200;
+            color: white;
+            width: 100px;
+            padding: 7px;
+            border: 1px solid #cfa200;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-weight: 200;
+        }
+
+        .btnLogout {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    font-size: 10px;
+    border: 1px solid #a8acb1;
+    border-radius: 5px;
+    width: 60px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btnList {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 12px;
+    border: 1px solid #a8acb1;
+    border-radius: 5px;
+    width: 60px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btnLogout:active,
+.btnList:active {
+    background: #e4e6eb;
+    -webkit-transform: translate(0, 0.5px);
+    -moz-transform: translate(0, 0.5px);
+    transform: translate(0, 0.5px);
+}
+
+
+
+    </style>
+</head>
+
+<body style="user-select: none;">
+    <div class="btnLogout" onclick="window.location = 'ririko01.html';">Logout</div>
+    <div class="center title">
+        <div>
+            <h2>
+                GOLDEN WEEK 安否状況
+            </h2>
+        </div>
+    </div>
+    <div class="center title" style="margin-bottom: 5px;margin-top: 40px;border-bottom:1px solid rgb(255, 204, 0)">
+        <div style="border: 0;height: 20px;">
+            <h3>
+                状況確認
+            </h3>
+        </div>
+        <div id="review-list">
+        </div>
+        <script src="app.js"></script>
+    </div>
+    <br>
+    <div class="contents">
+        <button onclick="window.location.href = 'ririko04.html';" type="submit" class="btnUpdate">+</button>
+    </div>
+</body>
+
+
+</html>
